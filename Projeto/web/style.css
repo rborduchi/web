@@ -1,0 +1,641 @@
+body
+{
+	margin: 0;
+}
+
+img,
+picture,
+video,
+embed
+{
+   max-width: 100%;
+}
+			
+.container
+{
+   max-width: 1366px;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+.header
+{
+	width: 100%;
+	height: 103px;
+}	
+
+.logo
+{
+	min-width: 8.24468085106383%;
+	float: left;
+	margin-top: 22px;
+}
+
+.menu
+{
+	width: 91.75531914893617%;
+	float: right;
+	margin-top: 37px;
+}
+
+.menu2
+{
+	width: 50.2%;
+	float: left;
+}
+
+li.menu2
+{
+	display: inline;
+	padding-left: 20px;
+	float: none;
+
+	font-size: 20px;
+	font-family: Open Sans;
+	font-weight: bold;
+	letter-spacing: -2px;
+}
+
+img.menu2
+{
+	width:7px;
+	height:100%;
+	position: relative;
+	margin-left: 5px;
+	float: none;
+}
+
+.menu3
+{
+	float: left;
+	margin-top: 10px;
+}
+
+li.menu3
+{
+	display: inline;
+	padding: 2px 5px;
+	float: none;
+	margin-left: 0;
+
+	font-size: 13.4px;
+	color: #666666;
+	font-family: Calibri;
+}
+
+.menu32
+{
+	float: left;
+	margin-top: 10px;
+	display: none;
+}
+li.menu32
+{
+	display: inline;
+	padding: 2px 5px;
+	float: none;
+	margin-left: 0;
+
+	font-size: 13.4px;
+	color: #666666;
+	font-family: Calibri;
+}
+
+img.menu3
+{
+	max-width: 200px;
+	position: relative;
+	margin-left: 3px;
+	float: none;
+}
+
+.pesq
+{
+	display: inline;
+	margin-left: 6px;
+	float: left;
+	min-width: 260px;
+	height: 35px;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	white-space: nowrap;
+}
+
+li.pesq
+{
+	margin-left: 13px;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #666666;
+	font-family: Calibri;
+	border-width: 0;	
+}
+
+.boneco
+{
+	margin-top: 10px;
+	margin-left: 10px;
+	display: inline;
+}
+
+.esq
+{
+	width: 50%;
+	float: left;
+}
+
+.titulo
+{
+	width: 100%;
+	font-family: Open Sans;
+	font-weight: bold;
+	padding-top: 1px;
+	color: #cd150c;
+}
+
+h1.titulo
+{
+	font-size: 56px;
+	letter-spacing: -1.68333px;
+	line-height: 61.6px;
+}
+
+li.not
+{
+	font-family: Open Sans;
+	font-weight: bold;
+	color: #666666;
+	font-size: 11.3px;
+	margin-left: 2%;
+	margin-top: 10px;
+}
+
+span.not
+{
+	color: #cd150c;
+	font-size: 18px; 
+	letter-spacing: -0.633333px;
+	line-height: 21.6px;
+	margin-left: 5px;
+}
+
+.not2
+{
+	margin-top: 30px;
+	width: 30.66666666666667%;
+	float: left;
+}
+
+img.not2
+{
+	border-radius: 2px;
+	width: 100%;
+	height: auto;
+}
+
+span.not2
+{
+	width: 100%;
+	color: #cd150c;
+	font-size: 22px;
+	letter-spacing: -0.883333px;
+	line-height: 27.5px;
+	font-family: Open Sans;
+	font-weight: bold;
+	margin-top: 4px;
+	float: left;
+}
+
+li.not21
+{
+	font-family: Open Sans;
+	color: #666666;
+	font-size: 11.3px;
+	margin-left: 6%;
+}
+
+span.not21
+{
+	color: #cd150c;
+	font-size: 16px;
+	letter-spacing: -0.566667px;
+	line-height: 20px;
+}
+
+.novela
+{
+	width: 20%;
+ 	display: block;
+	position: relative;
+	float:left;
+	margin-top: 10px;
+
+}
+.esporte
+{
+	width: 20%;
+	padding-left: 5%;
+        padding-right: 5%;
+	display: block;
+	position: relative;
+	float: left;
+	margin-top: 10px;
+
+}
+.sub{
+	position: relative;
+	margin-bottom: 1.875rem;
+	font-family: Open Sans;
+	font-weight: bold;
+        margin-bottom: 1rem;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        box-sizing: inherit;
+        display: block;
+}
+
+span.notice
+{
+	width: 100%;
+	height: auto;
+	font-size: 22px;
+	font-weight: 400px;
+	letter-spacing: -0.883333px;
+	line-height: 27.5px;
+	font-family: Open Sans;
+	font-weight: bold;
+	margin-top: 4px;
+	display: flex;
+	position: relative;
+}
+
+li.notice
+{
+	font-family: Open Sans;
+	color: #666666;
+	font-size: 11.3px;
+	margin-left: 0%;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+span.subNotice
+{
+	font-size: 16px;
+	letter-spacing: -0.566667px;
+	line-height: 20px;
+	font-weight: 400px;
+	line-height: 20px;
+	position: relative;	
+	vertical-align: baseline;
+}
+
+img.foto{
+	margin-top: 40px;
+	width: 100%;
+	height: auto;
+	border-radius: 2px;
+}
+video.vid{
+	margin-top: 40px;
+	width: 100%;
+	height: auto;
+	border-radius: 2px;
+}
+@media screen and (max-width: 1300px)
+{	
+	.menu2
+	{
+		width: 45%;
+	}
+}
+@media screen and (max-width: 1252px)
+{	
+	.menu2
+	{
+		width: 35%;
+	}
+}
+
+@media screen and (max-width: 998px)
+{
+	.container
+	{
+		margin-left: 3.3%;
+   		margin-right: 3.3%;
+	}
+	.menu
+	{
+		max-width: 89%;
+		float: right;
+	}
+	.menu2
+	{
+		width: 80%;
+	}
+	li.menu2
+	{
+		margin-left: 3%;
+		padding: 0;
+	}
+	img.menu2
+	{
+		display: none; 
+	}
+	.menu3
+	{
+		display: none;
+	}
+	.menu32
+	{
+		display: inline;
+	}
+	.pesq
+	{
+		display: inline;
+		margin-left: 14px;
+		border-width: 0;
+		float: none;
+	}
+	li.pesq
+	{
+		position: relative;
+		font-size: 0;
+		
+	}
+	.esq
+	{
+		width: 100%;
+		float: none;
+	}
+	h1.titulo
+	{
+		font-size: 42px;
+		letter-spacing: -1.26667px;
+		line-height: 46.2px;
+		margin-top: 40px;
+	}
+	.novela
+	{
+	width: 45%;
+	margin-left: 10%;
+    padding-right: 0%;
+	float: left;
+	margin-top: 40px;
+
+	}
+	.esporte
+	{
+	width: 45%;
+	padding-left: 0%;
+    padding-right: 0%;
+	float: left;
+	margin-top: 40px;
+
+
+	}
+
+	img.foto{
+
+
+	margin-top: 0;
+	width: 44%;
+	height: auto;
+	border-radius: 2px;
+	float: left;
+	}
+
+	span.notice
+	{
+	margin-left: 48%;
+	margin-top: 30px;
+	width: 150.35px;
+	margin-bottom: 12px;
+	float: none;
+ 	font-size: 18px;
+	line-height: 21.6px;
+    letter-spacing: -0.633333px;
+
+
+/*
+    	font-size: 18px;
+		letter-spacing: -0.633333px;
+		line-height: 21.6px;
+		margin-left: 51%;
+		margin-top: : 30px;
+		float: none;
+*/
+
+	}
+
+li.notice
+{	
+	
+	font-family: Open Sans;
+	color: #666666;
+	font-size: 11.3px;
+	margin-left: 0%;
+	margin-top: 10px;
+	font-size: .875rem;
+    line-height: 1.2;
+    letter-spacing: -.035em;
+    float: none;
+
+
+}
+
+span.subNotice
+{
+	font-size: 16px;
+	letter-spacing: -0.566667px;
+	line-height: 20px;
+	font-weight: 400px;
+	line-height: 20px;
+	position: relative;	
+	vertical-align: baseline;
+}
+
+}
+
+@media screen and (max-width: 320px)
+{
+	.logo
+	{
+		float: none;
+		margin-top: 10px;
+		margin-right: auto;
+		margin-left: auto;
+		width: 40%;
+	}
+	.menu
+	{
+		width: 100%;
+		height: 30px;
+		margin-top: 0;
+		float: none;
+	}
+	.menu2
+	{
+		width: 100%;
+		height: 30px; 
+		float: none;
+	}
+	li.menu2
+	{
+	font-size: 16px;
+	letter-spacing: -1px;
+	margin-left: 0;
+	padding:  0 0 0 5.2%;
+	}
+	img.menu2
+	{
+		display: none; 
+	}
+	.menu3
+	{
+		display: none;
+	}
+	.menu32
+	{
+		display: none;
+	}
+	.pesq
+	{
+		display: none;
+	}
+	.boneco
+	{
+		display: none;
+	}
+	.esq
+	{
+		width: 100%;
+		float: none;
+	}
+	h1.titulo
+	{
+		font-size: 32px;
+		letter-spacing: -0.966667px;
+		line-height: 38.0833px;
+		margin-top: 0;
+	}
+	li.not
+	{
+		font-family: Open Sans;
+		font-weight: bold;
+		color: #666666;
+		font-size: 9px;
+		margin-left: 4%;
+		margin-top: 10px;
+	}
+	span.not
+	{
+		font-size: 16px; 
+		letter-spacing: -0.566667px;
+		line-height: 20px;
+		margin-left: 5px;
+	}
+	.not2
+	{
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	img.not2
+	{
+		border-radius: 2px;
+		width: 50%;
+		height: auto;
+		margin-top: 0;
+		margin-right: 5%;
+		float: left;
+
+	}
+
+	span.not2
+	{	
+		width: 134.117px;
+		font-size: 18px;
+		letter-spacing: -0.633333px;
+		line-height: 21.6px;
+		float: none;
+	}	
+	span.not21
+	{
+		font-size: 14px;
+		letter-spacing: -0.483333px;
+		line-height: 16.8px;
+	}
+
+	.novela
+	{
+	width: 100%;
+	margin-left: 0%;
+    padding-right: 0%;
+	float: left;
+	margin-top: -10px;
+
+	}
+	.esporte
+	{
+	width: 100%;
+	height: auto;
+	padding-left: 0%;
+    padding-right: 0%;
+	float: left;
+	margin-top: -10px;
+	margin-left: 0;
+
+
+	}
+
+	img.foto{
+		border-radius: 2px;
+		width: 45%;
+		margin-top: 0;
+		margin-right: 5%;
+		float: left;
+
+	}
+
+	span.notice
+
+	{
+		width: 134.117px;
+		font-size: 18px;
+		letter-spacing: -0.633333px;
+		line-height: 21.6px;
+		margin-left: 51%;
+		margin-top: 30px;
+		float: none;
+  	}
+
+	li.notice
+	{	
+		
+		font-family: Open Sans;
+		color: #666666;
+		font-size: 11.3px;
+		margin-left: 5%;
+		margin-bottom: 0;
+		margin-top: 8px;
+		font-size: .875rem;
+	    line-height: 1.2;
+	    letter-spacing: -.035em;
+	    float: none;
+	}
+
+	span.subNotice
+	{
+		font-size: 14px;
+		letter-spacing: -0.483333px;
+		line-height: 16.8px;
+	}
+
+}
