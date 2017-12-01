@@ -5,13 +5,14 @@
 <%@page import="Java.Postagem"%>
 <%@page import="Java.Usuario"%>
 
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>Página do Usuário</title>
         <link rel="stylesheet" type="text/css" href="style_login.css">
         <link rel="shortcut icon" href="Imagens\icon.ico">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
     </head>
 <body>
     <c:choose>
@@ -57,7 +58,7 @@
 				<div class="esporte">
                                     <% for(Postagem cadaPost : postagem){%>
 					<div class="sub">
-                                            <img src="<%=request.getContextPath()%>/<%=cadaPost.getArquivo()%>" class="foto"/><br>						    
+                                            <img src="<%=request.getContextPath()%>/<%=cadaPost.getArquivo()%>" width="400" height="400"/><br>						    
                                             <span class="notice" style="color: #3b9c00"><%= cadaPost.getTitulo()%></span><br><br> 
                                         
 				 	</div>
