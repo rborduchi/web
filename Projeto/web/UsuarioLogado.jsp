@@ -12,6 +12,7 @@
         <title>Página do Usuário</title>
         <link rel="stylesheet" type="text/css" href="style_login.css">
         <link rel="shortcut icon" href="Imagens\icon.ico">
+        <script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
     </head>
 <body>
     <c:choose>
@@ -32,22 +33,23 @@
                
                 <form  id="formnot" enctype="multipart/form-data">
                 
-                <input type="hidden" name="user_id" value="<%=(Integer)session.getAttribute("id")%>">
+                <input type="hidden" id="user_id" value="<%=(Integer)session.getAttribute("id")%>">
                 
             <div>
                 <label for="ltitulo"> Título</label>
-                <input type ="text" name="titulo" placeholder="Digite o título" class="text" >
+                <input type ="text" id="titulo" placeholder="Digite o título" class="text" >
             </div>
             <div>
                 <label for="cat"> Categoria</label>
-                <input type ="text" name="categoria" placeholder="Digite a categoria" class="text" >
+                <input type ="text" id="categoria" placeholder="Digite a categoria" class="text" >
             </div>
             <div>
                 <label for="arquivo"> Imagem</label>
-                <input type ="file" name="file">
+                <input type ="file" id="file">
             </div>
-            <input type="submit" name="button" class="button" value="NOVO">
-            <ul id="container"></ul>
+                <input type="submit" id="btnnot" name="button" class="button" value="NOVO">
+            
+</div>
         
             </form>    
         </div>
@@ -68,7 +70,7 @@
         
     </c:choose>
             
-            <script>
+<%--<script>
 	var form = document.getElementById("formnot");
 	form.onsubmit = function(e){
 		e.preventDefault();
@@ -78,7 +80,20 @@
 		xhr.send(formdata);
 		console.log(xhr.responseText);
 		form.reset();
-	}
+	};
+</script>--%>
+
+<script type="text/javascript">
+function func(){
+    $(document).ready(function(){
+        $("#btnnot").click(function(){        
+            $.post("Up", $("#formnot").serialize(), function(data, status, xhr) {
+            alert(data);
+            });
+        });
+    });
+}
 </script>
+
     </body>
 </html>

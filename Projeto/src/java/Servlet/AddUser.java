@@ -40,29 +40,8 @@ public class AddUser extends HttpServlet
             
             UsuarioDAO udao = new UsuarioDAO();
             
-            out.println("<!doctype html>");
-            out.println("   <html>");
-            out.println("        <head>");
-            out.println("                   <title>Cadastro</title>");
-            out.println("                   <link rel=\"stylesheet\" type=\"text/css\" href=\"style_login.css\">");
-            out.println("	<link rel=\"shortcut icon\" href=\"Imagens\\icon.ico\">");
-            out.println("                </head>");
-            out.println("        <body>");
+            udao.addUser(user);
             
-            if(udao.addUser(user) == 1){
-                out.println("<label>Preencha todos os campos!</label>");
-                out.println("<a href=\"./cadastro\" style=\"text-decoration: none;\">TENTE NOVAMENTE</a>");               
-            }
-            else if(udao.addUser(user) == 2){
-                out.println("<label>E-mail "+email+" já cadastrado!</label");
-            }
-            else{
-                out.println("<label>Usuário "+nome+" cadastrado com sucesso!</label");
-                
-            }
-            
-            out.println("        </body>");
-            out.println("</html>");
         
     }
 
