@@ -42,4 +42,15 @@
         width: 255px; 
         height: 35px; 
         margin-bottom: 10px;
+        border: none;
+}
+
+.gif{
+    position: absolute;
+    display: none;
+    top: 100px;
+    left: 70px;
+    width: 100px;
+    border-radius: 5px;
+    height: auto;
 }

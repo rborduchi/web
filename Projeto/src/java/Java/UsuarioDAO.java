@@ -77,29 +77,14 @@ public class UsuarioDAO {
         
     }
 
-    public int addUser(Usuario user){
+    public void addUser(Usuario user){
         Connection conn = this.getConnection();
         
         PreparedStatement p = null;
         ResultSet r = null;
         
-        try{
-            String query = "SELECT user_email FROM usuario WHERE user_email = ?";
-            
-            p = conn.prepareStatement(query);
-            p.setString(1, user.getEmail());
-
-            r = p.executeQuery();
-
-            if(user.getNome().trim().equals("") || user.getEmail().trim().equals("") || user.getSenha().trim().equals("")){
-                return 1;
-                }
-            else if(r.next()){
-                return 2;
-            }
-            else{
-                try {
-                query = "INSERT INTO usuario (user_nome, user_email, user_senha) VALUES (?, ?, ?)";
+        try {
+                String query = "INSERT INTO usuario (user_nome, user_email, user_senha) VALUES (?, ?, ?)";
                 p = conn.prepareStatement(query);
                 p.setString(1, user.getNome());
                 p.setString(2, user.getEmail());
@@ -124,10 +109,7 @@ public class UsuarioDAO {
                     conn = null;
                 }
             }
-            }
-        }catch (SQLException e){
-            e.printStackTrace();
-        }       
-        return 3;
+            
+        
     }
 }

@@ -3,9 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/joaov/Documents/GitHub/web/Projeto/web/UsuarioLogado.jsp</file>
             <file>file:/C:/Users/joaov/Documents/GitHub/web/Projeto/web/index.jsp</file>
             <file>file:/C:/Users/joaov/Documents/GitHub/web/Projeto/web/javascript.js</file>
+=======
+            <file>file:/C:/Users/rafa_/Documents/GitHub/web/Projeto/web/index.jsp</file>
+            <file>file:/C:/Users/rafa_/Documents/GitHub/web/Projeto/web/UsuarioLogado.jsp</file>
+            <file>file:/C:/Users/rafa_/Documents/GitHub/web/Projeto/web/Login.jsp</file>
+>>>>>>> b4a2e5edefde2a3f16fee5552564b0b1cf42365b
         </group>
     </open-files>
 </project-private>

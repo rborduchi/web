@@ -21,6 +21,6 @@
             <input type="submit" name="button" class="button" value="ENTRAR">
             <label class="text2">Não tem conta?</label>
             <a href="./cadastro.jsp" class="link"  style="text-decoration: none;">CADASTRE-SE</a>
-        </div>     
+        </div>        
     </body>
 </html>
