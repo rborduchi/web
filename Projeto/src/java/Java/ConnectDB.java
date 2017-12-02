@@ -25,7 +25,7 @@ public class ConnectDB {
     public static final String driver = "org.postgresql.Driver";
     public static final String url = "jdbc:postgresql://localhost:5432/globo";
     public static final String usarname = "postgres";
-    public static final String password = "1573"; 
+    public static final String password = "jvfmef"; 
     public static final int tipo = r.TYPE_SCROLL_SENSITIVE;
     public static final int concorrencia = r.CONCUR_UPDATABLE;
     

@@ -5,14 +5,22 @@
 <%@page import="Java.Postagem"%>
 <%@page import="Java.Usuario"%>
 
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>Página do Usuário</title>
         <link rel="stylesheet" type="text/css" href="style_login.css">
         <link rel="shortcut icon" href="Imagens\icon.ico">
+<<<<<<< HEAD
         <script type="text/javascript" src="./jquery.min.js"></script>
+=======
+<<<<<<< HEAD
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+=======
+        <script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
+>>>>>>> b4a2e5edefde2a3f16fee5552564b0b1cf42365b
+>>>>>>> 23fc9c5231f3a95b5a7e0ca04bd3e973e6e5adf2
     </head>
 <body>
     <c:choose>
@@ -57,7 +65,7 @@
 				<div class="esporte">
                                     <% for(Postagem cadaPost : postagem){%>
 					<div class="sub">
-                                            <img src="<%=request.getContextPath()%>/<%=cadaPost.getArquivo()%>" class="foto"/><br>						    
+                                            <img src="<%=request.getContextPath()%>/<%=cadaPost.getArquivo()%>" width="400" height="400"/><br>						    
                                             <span class="notice" style="color: #3b9c00"><%= cadaPost.getTitulo()%></span><br><br> 
                                         
 				 	</div>
