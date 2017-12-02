@@ -84,13 +84,16 @@ public class UsuarioDAO {
         ResultSet r = null;
         
         try {
-                String query = "INSERT INTO usuario (user_nome, user_email, user_senha) VALUES (?, ?, ?)";
+                String query = "INSERT INTO usuario (user_nome, user_email, cep, cidade, uf, user_senha) VALUES (?, ?, ?, ?, ?, ?)";
                 p = conn.prepareStatement(query);
                 p.setString(1, user.getNome());
                 p.setString(2, user.getEmail());
-                p.setString(3, user.getSenha());
+                p.setString(3, user.getCep());
+                p.setString(4, user.getCidade());
+                p.setString(5, user.getUf());
+                p.setString(6, user.getSenha());
             
-                r = p.executeQuery();
+                p.executeQuery();
             
             } catch (SQLException ex) {
                 Logger.getLogger(UsuarioDAO.class.getName()).log(Level.SEVERE, null, ex);
