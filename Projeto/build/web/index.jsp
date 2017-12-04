@@ -40,30 +40,9 @@
 					</div>
 
 					<div class="pesq">
-						<li class="pesq"><img src="Imagens\pesq.png">
-                                                    <form id="formcad" action-charset="utf-8">
-                                                        <input type ="text" id="termo" placeholder="Digite a Busca" class="text" >
-                                                        <input type="submit" name="button" id="btnbus" class="button" value="Busque">
-                                                    </form>                                                
-                                                </li>
+						<li class="pesq"><img src="Imagens\pesq.png"><a href= "./Pesquisa.jsp">encontre na globo.com</a>
                                                 
-                                                <script>
-                                                    $(document).ready(function(){
-                                                    $("#btnbus").click(function (ev) {
-                                                        $.ajax({
-                                                            type: "post",
-                                                            url: "./Pesquisa.jps",
-                                                            data: {
-                                                                titulo: $("#termo").val(),
-                                                            }
-                                                        });
-                                                        $(document).ajaxComplete(function () {                                                           
-                                                            res.sendRedirect("./Pesquisa.jsp");
-                                                        });
-                                                        return false;
-                                                    });
-                                                });
-                                                    </script>
+                                                </li>
 					</div>
 
 					<div class="boneco">
