@@ -65,6 +65,15 @@
                         setTimeout(function () {
                             $(".gif").css("display", "none");
                         }, 1000);
+                        alert("Usuário "+$("#nome").val()+" cadastrado com sucesso!");
+                        $("#nome").val(decodeURIComponent(""));
+                        $("#login").val(decodeURIComponent(""));
+                        $("#cep").val(decodeURIComponent(""));
+                        $("#cidade").val(decodeURIComponent(""));
+                        $("#uf").val(decodeURIComponent(""));
+                        $("#senha").val(decodeURIComponent(""));
+                        $("#cidade").prop( "disabled", false);
+                        $("#uf").prop( "disabled", false);
                     });
                     return false;
                 });
@@ -78,6 +87,9 @@
                         if (data["resultado"]) {
                             $("#cidade").val(decodeURIComponent(data["cidade"]));
                             $("#uf").val(decodeURIComponent(data["uf"]));
+                            $("#cidade").prop( "disabled", true );
+                            $("#uf").prop( "disabled", true );
+                            
                         }
                     });
                 }

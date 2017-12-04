@@ -34,7 +34,7 @@ public class Postagem {
         String driver = "org.postgresql.Driver";
         String url = "jdbc:postgresql://localhost:5432/globo";
         String usarname = "postgres";
-        String password = "jvfmef";
+        String password = "1573";
         
         try {
             Class.forName(driver);

@@ -46,7 +46,7 @@
 					</div>
 
 					<div class="boneco">
-						<li class="boneco"><img src="Imagens\boneco.png"></li>
+						<li class="boneco"><a href= "./jornalista.jsp"><img src="Imagens\boneco.png"></a></li>
 					</div>						
 
 				</div>				
