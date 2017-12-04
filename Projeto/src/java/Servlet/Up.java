@@ -59,8 +59,9 @@ public class Up extends HttpServlet {
                 postagem.setUser_id(Integer.parseInt(request.getParameter("user_id")));
                 postagem.setArquivo("");
                 ok = postagem.inserir();
-                if (ok)
-                    response.sendRedirect("./UsuarioLogado.jsp");
+                if (ok){
+                    response.sendRedirect("./UsuarioLogado.jsp");   
+                }
             } catch (SQLException ex) {
                  Logger.getLogger(Up.class.getName()).log(Level.SEVERE, null, ex);
             }

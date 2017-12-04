@@ -30,13 +30,19 @@ public class AddUser extends HttpServlet
             
             String nome = req.getParameter("nome");
             String email = req.getParameter("login");
-            String senha = req.getParameter("senha");
+            String cep = req.getParameter("cep");
+            String cidade = req.getParameter("cidade");
+            String uf = req.getParameter("uf");
+            String senha = req.getParameter("senha");            
             
             Usuario user = new Usuario();
             
             user.setNome(nome);
             user.setEmail(email);
-            user.setSenha(senha);
+            user.setCep(cep);
+            user.setCidade(cidade);
+            user.setUf(uf);
+            user.setSenha(senha);            
             
             UsuarioDAO udao = new UsuarioDAO();
             

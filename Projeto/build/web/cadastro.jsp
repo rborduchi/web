@@ -25,6 +25,16 @@
                     <input type ="text" name="login" id="login" placeholder="Digite seu e-mail" class="text" value="">
                 </div>
                 <div>
+                    <label for="lcep"> CEP</label>
+                    <input type ="text" name="cep" id="cep" placeholder="Digite seu CEP" class="text" value="" onblur="buscaCep()">
+                </div>
+                <div>
+                    <input type ="text" name="cidade" id="cidade" placeholder="Cidade" class="text" value="">
+                </div>
+                <div>
+                    <input type ="text" name="uf" id="uf" placeholder="Estado" class="text" value="">
+                </div>
+                <div>
                     <label for="lsenha"> Senha · 8 a 15 dígitos</label>
                     <input type ="password" name="senha" id="senha" placeholder="Digite sua senha" class="text" value="">
                 </div>
@@ -36,27 +46,43 @@
         </div>
         
         <script>
-        $(document).ready(function(){
-        $("#btncad").click(function (ev) {
-            $(".gif").css("display", "block");
-            $.ajax({
-                type: "post",
-                url: "./user",
-                data: {
-                    nome: $("#nome").val(),
-                    login: $("#login").val(),
-                    senha: $("#senha").val()
+            $(document).ready(function(){
+                $("#btncad").click(function (ev) {
+                    $(".gif").css("display", "block");
+                    $.ajax({
+                        type: "post",
+                        url: "./user",
+                        data: {
+                            nome: $("#nome").val(),
+                            login: $("#login").val(),
+                            cep: $("#cep").val(),
+                            cidade: $("#cidade").val(),
+                            uf: $("#uf").val(),
+                            senha: $("#senha").val()
+                        }
+                    });
+                    $(document).ajaxComplete(function () {
+                        setTimeout(function () {
+                            $(".gif").css("display", "none");
+                        }, 1000);
+                    });
+                    return false;
+                });
+            });
+            
+            function buscaCep() {
+                if ($.trim($("#cep").val()) != "") {
+                    $.getJSON("http://cep.republicavirtual.com.br/web_cep.php?cep=" + $("#cep").val()
+                              + "&formato=json", function (data) {
+                        console.log(data);
+                        if (data["resultado"]) {
+                            $("#cidade").val(decodeURIComponent(data["cidade"]));
+                            $("#uf").val(decodeURIComponent(data["uf"]));
+                        }
+                    });
                 }
-            });
-            $(document).ajaxComplete(function () {
-                setTimeout(function () {
-                    $(".gif").css("display", "none");
-                }, 2000);
-                res.sendRedirect("./UsuarioLogado.jsp");
-            });
-            return false;
-        });
-    });
+            }
+            
         </script>
         
     </body>
