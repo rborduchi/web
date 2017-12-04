@@ -104,6 +104,27 @@ public class Postagem {
         }
         return obj;
     }
+    
+    public ArrayList<Postagem> Pesquisa(String termo) throws SQLException{
+        ArrayList<Postagem> obj;
+        try (Connection conn = this.getConnection()) {
+            PreparedStatement p = null;
+            ResultSet r = null;
+            obj = new ArrayList();
+            
+            String query = ("select * from noticia where titulo like ?");
+
+            p = conn.prepareStatement(query);
+            p.setString(1, "%"+termo+"%");
+            r = p.executeQuery();
+            while(r.next()){
+                obj.add(new Postagem(r.getInt("not_id"),r.getString("titulo"),r.getString("categoria"), r.getString("arquivo"), r.getInt("user_id")));
+            }
+            p.close();
+        }
+        return obj;
+    }
+    
     public int getId() {
         return id;
     }

@@ -3,8 +3,31 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/rafa_/Documents/GitHub/web/Projeto/web/cadastro.jsp</file>
             <file>file:/C:/Users/rafa_/Documents/GitHub/web/Projeto/web/jornalista.jsp</file>
+=======
+            <file>file:/C:/Users/joaov/Documents/GitHub/web/Projeto/web/UsuarioLogado.jsp</file>
+            <file>file:/C:/Users/joaov/Documents/GitHub/web/Projeto/src/java/Java/Usuario.java</file>
+            <file>file:/C:/Users/joaov/Documents/GitHub/web/Projeto/src/java/Java/UsuarioDAO.java</file>
+            <file>file:/C:/Users/joaov/Documents/GitHub/web/Projeto/web/index.jsp</file>
+            <file>file:/C:/Users/joaov/Documents/GitHub/web/Projeto/web/cadastro.jsp</file>
+            <file>file:/C:/Users/joaov/Documents/GitHub/web/Projeto/web/javascript.js</file>
+<<<<<<< HEAD
+=======
+=======
+            <file>file:/C:/Users/rafa_/Documents/GitHub/web/Projeto/web/index.jsp</file>
+            <file>file:/C:/Users/rafa_/Documents/GitHub/web/Projeto/web/UsuarioLogado.jsp</file>
+            <file>file:/C:/Users/rafa_/Documents/GitHub/web/Projeto/web/Login.jsp</file>
+<<<<<<< HEAD
+            <file>file:/C:/Users/rafa_/Documents/GitHub/web/Projeto/web/cadastro.jsp</file>
+            <file>file:/C:/Users/rafa_/Documents/GitHub/web/Projeto/src/java/Servlet/Up.java</file>
+            <file>file:/C:/Users/rafa_/Documents/GitHub/web/Projeto/web/postagem.jsp</file>
+=======
+>>>>>>> b4a2e5edefde2a3f16fee5552564b0b1cf42365b
+>>>>>>> 23fc9c5231f3a95b5a7e0ca04bd3e973e6e5adf2
+>>>>>>> 2f87ca7efc1c5113893d2787e43abc21486a6b98
+>>>>>>> 529b1e673ae502bbb37a09740884deec0be5de4a
         </group>
     </open-files>
 </project-private>
