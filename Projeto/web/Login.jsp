@@ -4,7 +4,7 @@
 <html>
     <head>
         <title>Login</title>
-        <link rel="stylesheet" type="text/css" href="style_login.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="shortcut icon" href="Imagens\icon.ico">
     </head>
     <body>

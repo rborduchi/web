@@ -67,11 +67,11 @@ public class getUser extends HttpServlet {
             String query = "SELECT * FROM usuario WHERE user_nome LIKE ?";
             
             p = conn.prepareStatement(query);
-            p.setString(1, busca + "%");
+            p.setString(1, "%" + busca + "%");
             r = p.executeQuery();
             
             while (r.next())
-                writer.println("<li>" + r.getString("user_nome") + "</li>");
+                writer.println("<li class=\"not\" style=\" margin-left: 5%;\"><span class=\"not\" id=\"container\" style=\"font-weight: normal; color: #666666;\">" +r.getString("user_nome") + "</span></li>");
 
         }catch (SQLException e){
             e.printStackTrace();

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<%@page contentType="text/html" pageEncoding="UTF-8" language="java"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri = "http://java.sun.com/jsp/jstl/core" prefix ="c"%>
 <%@page import="java.util.ArrayList"%> 
 <%@page import="Java.Postagem"%>
@@ -9,9 +8,8 @@
 <html>
     <head>
         <title>Página do Usuário</title>
-        <link rel="stylesheet" type="text/css" href="style_login.css">
-        <link rel="shortcut icon" href="Imagens\icon.ico">]
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="Imagens\icon.ico">
     </head>
 <body>
     <c:choose>

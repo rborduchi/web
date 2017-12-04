@@ -9,7 +9,7 @@
 <html>
     <head>
         <title>Cadastro</title>
-        <link rel="stylesheet" type="text/css" href="style_login.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="shortcut icon" href="Imagens\icon.ico">
         <script type="text/javascript" src="./jquery.min.js"></script>
     </head>
