@@ -22,8 +22,8 @@
 
             
             <label>Usuário: ${user.nome}</label>
-            <h1>Publicações:</h1>
-            <h2 style="margin: auto 500px; font-family: Open Sans; font-weight: bold; color: green">Uploads Esportes </h2>
+            <h1 style="margin-left: 5%;">Publicações:</h1>
+            <h2 style="margin: auto 500px; font-weight: bold; color: green;">Uploads Esportes </h2>
                     
             <div class="fundo">                
                
