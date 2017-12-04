@@ -44,17 +44,5 @@
                 xmlhttp.send();
             });
         </script>
-        <%--<%Postagem post =  new Postagem();        
-        ArrayList<Postagem> postagem = post.Pesquisa("pesquisa");%> 
-	<div class="esporte">
-            <% for(Postagem cadaPost : postagem){%>
-                <div class="sub">
-                    <img src="<%=request.getContextPath()%>/<%=cadaPost.getArquivo()%>" class="foto"/>						    
-                    <span class="notice" style="color: #3b9c00"><%= cadaPost.getTitulo()%></span> 
-                                        
-		</div>
-            <%}%>					   					 
-	</div>
-        --%>
     </body>
 </html>

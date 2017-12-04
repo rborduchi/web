@@ -40,9 +40,7 @@
 					</div>
 
 					<div class="pesq">
-						<li class="pesq"><img src="Imagens\pesq.png"><a href= "./Pesquisa.jsp">encontre na globo.com</a>
-                                                
-                                                </li>
+						<li class="pesq"><a href= "./Pesquisa.jsp"><img src="Imagens\pesq.png"></a></li>
 					</div>
 
 					<div class="boneco">
